@@ -12,11 +12,11 @@ jobs:
     strategy:
       matrix:
         build_env:
-          - tag: "07.26.2024"
-            pkgarch: x86_64
+          - tag: "23.05.3"
+            pkgarch: i386_pentium4
             target: x86
-            subtarget: 64
-            vermagic: "1"
+            subtarget: generic
+            vermagic: "c7ce0800217ae01ddd310689dc4b6d31"
 
     steps:
       - uses: actions/checkout@v4
